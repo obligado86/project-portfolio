@@ -1,0 +1,26 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.headertext {
+	font-family: 'DM Sans', sans-serif;
+}
+
+.bgcolordark {
+	background-color: #1B1B32;
+}
+
+.bgcolortwo {
+	background-color: #2A2A40;
+}
+
+.navlink-hover:hover {
+	background-color: white;
+	color: #2A2A40 !important;
+}
+
+.profile-img {
+	border: 0.8rem solid lightgray;
+}
