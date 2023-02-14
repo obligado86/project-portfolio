@@ -33,8 +33,13 @@ nav {
 #aboutme {
 	background-image: url("https://cdn.shopify.com/s/files/1/0656/4111/9963/files/pexels-felix-mittermeier-956981_1.jpg?v=1672733348");
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: center;
 	background-attachment: fixed;
+	background-size: cover;
+}
+
+.icon {
+	font-size: 29px;
 }
 
 .bgdarker {
