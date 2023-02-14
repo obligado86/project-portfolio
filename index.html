@@ -13,18 +13,18 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark text-light bgcolordark position-sticky w-100">
-			  <a class="navbar-brand px-4 headertext" href="#">Joseph Obligado</a>
+			<nav class="navbar navbar-expand-lg navbar-dark text-light position-fixed bgcolordark w-100">
+			  <a class="navbar-brand px-4 headertext" href="#profile">Joseph Obligado</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse d-flex-inline justify-content-end" id="navbarNav">
 			    <ul class="navbar-nav">
 			      <li class="nav-item active">
-			        <a class="nav-link py-2 px-4 navlink-hover" href="#">Profile <span class="sr-only">(current)</span></a>
+			        <a class="nav-link py-2 px-4 navlink-hover" href="#profile">Profile <span class="sr-only">(current)</span></a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link py-2 px-4 navlink-hover" href="#">About me</a>
+			        <a class="nav-link py-2 px-4 navlink-hover" href="#aboutme">About me</a>
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link py-2 px-4 navlink-hover" href="#">Projects</a>
@@ -37,14 +37,53 @@
 			</nav>
 		</header>
 		<main>
-			<div class="container-fluid vh-100 vw-100 bgcolortwo">
+			<div class="d-block vh-100 vw-100 bgcolortwo" id="profile">
 				<div class="row w-100 h-100 align-content-center text-center text-md-left">
 					<div class="col-xs col-md-6 order-0">
-						<img src="./images/Untitled design (16).png" class="rounded-circle profile-img w-75 float-md-right mr-md-2 mx-auto">
+						<img src="./images/Untitled design (16).png" class="rounded-circle profile-img w-50 float-md-right mr-md-2 mx-auto">
 					</div>
 					<div class="col-xs col-md-6 text-light order-1 my-md-auto">
 						<h1 class="headertext">John Joseph Obligado</h1>
-						<h3>Web Developer</h3>
+						<h3>Full Stack Web Developer</h3>
+					</div>
+				</div>
+			</div>
+			<div class="d-block vh-100 vw-100" id="aboutme">
+				<div class="w-100 h-100 align-content-center text-center text-light bgdarker m-0">
+					<div id="slider" class="carousel slide w-100 h-100" data-ride="carousel">
+					  	<ol class="carousel-indicators">
+					    	<li data-target="#slider" data-slide-to="0" class="active"></li>
+					    	<li data-target="#slider" data-slide-to="1"></li>
+					    	<li data-target="#slider" data-slide-to="2"></li>
+					  	</ol>
+					  	<div class="carousel-inner">
+					    <div class="carousel-item active w-100 h-100">
+					      	<div class="align-middle">
+					            <h5 class="headertext">E-commerce Experienced</h5>
+					            <p>Develop Site using Shopify and other E-commerce platform</p>
+					      	</div>
+					    </div>
+					    <div class="carousel-item w-100 h-100">
+					      	<div class="align-content-center">
+					            <h5 class="headertext">First slide label</h5>
+					            <p>Some representative placeholder content for the first slide.</p>
+					      	</div>
+					    </div>
+					    <div class="carousel-item ">
+					      	<div class="align-content-center">
+					            <h5 class="headertext">First slide label</h5>
+					            <p>Some representative placeholder content for the first slide.</p>
+					      	</div>
+					    </div>
+					  </div>
+					  <button class="carousel-control-prev" type="button" data-target="#slider" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </button>
 					</div>
 				</div>
 			</div>
