@@ -4,6 +4,14 @@
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+}
+
 nav {
 	z-index: 5;
 }
@@ -40,6 +48,10 @@ nav {
 
 .icon {
 	font-size: 29px;
+}
+
+#modal-button {
+	width: 18rem;
 }
 
 .bgdarker {
@@ -133,10 +145,23 @@ nav {
   	z-index: 2;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 920px) {
 	.phone {
 		bottom: 11rem;
-  		left: 15rem;
+  		left: 13rem;
   		transform: scale(0.9);
 	}
+}
+
+#footer-links:hover {
+	color: white !important;
+}
+
+#top-button {
+	width: 4rem;
+	height: 4rem;
+	position: fixed;
+	bottom: 2rem;
+	right: 9px;
+	z-index: 5;
 }
