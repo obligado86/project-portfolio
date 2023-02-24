@@ -6,6 +6,7 @@
 
 html {
 	scroll-behavior: smooth;
+	margin: 0;
 }
 
 body {
@@ -63,13 +64,6 @@ nav {
 	font-size: 29px;
 }
 
-
-@media (max-width: 390px) {
-	.shrink {
-		scale: 0.7;
-	}
-}
-
 #modal-button {
 	width: 18rem;
 }
@@ -83,6 +77,7 @@ nav {
 }
 
 .laptop {
+		position: relative;
   	width: 240px;
   	height: 150px;
   	margin: 0 auto;
@@ -166,12 +161,9 @@ nav {
   	z-index: 2;
 }
 
-
-@media (max-width: 420px) {
-	.phone {
-  		top: 9%;
-  		left: 80%;
-	}
+footer {
+	position: relative;
+	bottom: 0;
 }
 
 #footer-links:hover {
@@ -185,6 +177,21 @@ nav {
 	bottom: 2rem;
 	z-index: 5;
 	left: 90%;
+}
+
+/*==================== Media Qeries =======================*/
+
+@media (max-width: 390px) {
+	.shrink {
+		scale: 0.7;
+	}
+}
+
+@media (max-width: 420px) {
+	.phone {
+  		top: 9%;
+  		left: 80%;
+	}
 }
 
 @media (max-width: 820px) {
