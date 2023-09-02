@@ -14,6 +14,12 @@
 		<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/a0ad673b98.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="./index.css">
+
+		<!-- Alpine Plugins -->
+		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+		 
+		<!-- Alpine Core -->
+		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 		<!-- ========== end of link href ======== -->
 	</head>
 	<body>
@@ -63,19 +69,19 @@
                         >
                     </video>
 				</div>
-				<div class="row h-100 align-content-center text-center text-md-left">
+				<div x-data="{ shown: false }" x-intersect.once="shown = true" class="row h-100 align-content-center text-center text-md-left">
 					<div class="col-xs-12 col-md-6 order-0">
-						<img src="./images/Untitled design (16).png" class="rounded-circle profile-img w-50 float-md-right mr-md-2 mx-auto">
+						<img x-show="shown" x-transition.duration.400ms src="./images/Untitled design (16).png" class="rounded-circle profile-img w-50 float-md-right mr-md-2 mx-auto">
 					</div>
 					<div class="col-xs-12 col-md-6 text-light order-1 my-md-auto">
-						<h1 class="headertext text-info">John Joseph Obligado</h1>
-						<h5>Full Stack Web Developer</h5>
+						<h1 x-show="shown" x-transition.duration.400ms x-transition.delay.200ms class="headertext text-info">John Joseph Obligado</h1>
+						<h5 x-show="shown" x-transition.duration.400ms x-transition.delay.400ms>Full Stack Web Developer</h5>
 						<div class="d-block">
 							<span class="my-2 d-block">
-								<a href="tel:+639261538970" class="text-decoration-none text-light"><i class="fa-solid fa-phone text-info"> </i> +63 926 153 8970</a> / <a href="tel:+639082687804" class="text-decoration-none text-light">+63 908 268 7804</a>
+								<a x-show="shown" x-transition.duration.500ms x-transition.delay.600ms href="tel:+639261538970" class="text-decoration-none text-light"><i class="fa-solid fa-phone text-info"> </i> +63 926 153 8970</a> / <a x-show="shown" x-transition.duration.500ms x-transition.delay.700ms href="tel:+639082687804" class="text-decoration-none text-light">+63 908 268 7804</a>
 							</span>
 							<span class="my-2 d-block">
-								<a href="mailto:obligado86@yahoo.com" class="text-decoration-none text-light">
+								<a x-show="shown" x-transition.duration.500ms x-transition.delay.800ms href="mailto:obligado86@yahoo.com" class="text-decoration-none text-light">
 									<i class="fa-solid fa-envelope text-info"> </i> obligado86@yahoo.com
 								</a>
 							</span>
@@ -92,13 +98,13 @@
 			<!-- ===================================== Projects section here ==================================== -->
 
 			<span id="projects"></span>
-			<div class="container-fluid px-5 py-5">
+			<div x-data="{ shown: false }" x-intersect.half="shown = true" class="container-fluid px-md-5 py-5">
 				<h2 class="text-center headertext mt-2">My Works</h2>
 				<div class="text-center row justify-content-center align-content-center py-4">
 
 					<!-- ========= 1st project ========== -->
 
-					<div class="col-xs-12 col-md-4 col-xl-3 w-75 h-25 mx-4 order-0">
+					<div x-show="shown" x-transition.duration.600ms x-transition.delay.200ms class="col-12 col-md-4 col-lg-3 w-75 h-25 mx-md-4 order-0">
 						<div class="laptop">
 							<div class="laptop-screen">
 								<img src="./images/nowenastore.png" class="img-fluid">
@@ -126,7 +132,7 @@
 
 					<!-- =========== 2nd project ========== -->
 
-					<div class="col-xs-12 col-md-4 col-xl-3 w-75 h-25 mx-4">
+					<div x-show="shown" x-transition.duration.600ms x-transition.delay.400ms class="col-12 col-md-4 col-lg-3 w-75 h-25 mx-md-4">
 						<div class="laptop">
 							<div class="laptop-screen">
 								<img src="./images/qualserv.png" class="img-fluid">
@@ -154,7 +160,7 @@
 
 					<!-- ========== 3rd project ========= -->
 
-					<div class="col-xs-12 col-md-4 col-xl-3 w-75 h-25 mx-4 order-5">
+					<div x-show="shown" x-transition.duration.600ms x-transition.delay.1800ms class="col-12 col-md-4 col-lg-3 w-75 h-25 mx-md-4 order-5">
 						<div class="laptop">
 							<div class="laptop-screen">
 								<img src="./images/tribute_blog_site.png" class="img-fluid">
@@ -181,7 +187,7 @@
 
 					<!-- ======== 4th project ======= -->
 
-					<div class="col-xs-12 col-md-4 col-xl-3 w-75 h-25 mx-4 order-3">
+					<div x-show="shown" x-transition.duration.600ms x-transition.delay.1400ms class="col-12 col-md-4 col-lg-3 w-75 h-25 mx-md-4 order-3">
 						<div class="laptop">
 							<div class="laptop-screen">
 								<img src="./images/porject_survey_form.png" class="img-fluid">
@@ -207,7 +213,7 @@
 
 					<!-- ========= 5th Project ======== -->
 
-					<div class="col-xs-12 col-md-4 col-xl-3 w-75 h-25 mx-4 order-1">
+					<div x-show="shown" x-transition.duration.600ms x-transition.delay.1000ms class="col-12 col-md-4 col-lg-3 w-75 h-25 mx-md-4 order-1">
 						<div class="laptop">
 							<div class="laptop-screen">
 								<img src="./images/project_gallery.png" class="img-fluid">
@@ -232,7 +238,7 @@
 
 					<!-- ======== 6th project ========= -->
 
-					<div class="col-xs-12 col-md-4 col-xl-3 w-75 h-25 mx-4 order-2">
+					<div x-show="shown" x-transition.duration.600ms x-transition.delay.1200ms class="col-12 col-md-4 col-lg-3 w-75 h-25 mx-md-4 order-2">
 						<div class="laptop">
 							<div class="laptop-screen">
 								<img src="./images/insurance.png" class="img-fluid">
@@ -258,7 +264,7 @@
 
 					<!-- ======== 7th project ========= -->
 
-					<div class="col-xs-12 col-md-4 col-xl-3 w-75 h-25 mx-4 order-4">
+					<div x-show="shown" x-transition.duration.600ms x-transition.delay.1600ms class="col-12 col-md-4 col-lg-3 w-75 h-25 mx-md-4 order-4">
 						<div class="laptop">
 							<div class="laptop-screen">
 								<img src="./images/pacebook.png" class="img-fluid">
@@ -284,7 +290,7 @@
 
 					<!-- ======== 8th project ========= -->
 
-					<div class="col-xs-12 col-md-4 col-xl-3 w-75 h-25 mx-4">
+					<div x-show="shown" x-transition.duration.600ms x-transition.delay.600ms class="col-12 col-md-4 col-lg-3 w-75 h-25 mx-md-4">
 						<div class="laptop">
 							<div class="laptop-screen">
 								<img src="./images/shippCalcProj.png" class="img-fluid">
@@ -310,7 +316,7 @@
 
 					<!-- ======== 8th project ========= -->
 
-					<div class="col-xs-12 col-md-4 col-xl-3 w-75 h-25 mx-4">
+					<div x-show="shown" x-transition.duration.600ms x-transition.delay.800ms class="col-12 col-md-4 col-lg-3 w-75 h-25 mx-md-4">
 						<div class="laptop">
 							<div class="laptop-screen">
 								<img src="./images/caccah.png" class="img-fluid">
@@ -323,8 +329,8 @@
 									<img src="./images/caccah-mob.png" alt="phone view joseph project" class="img-fluid">
 								</div>
 							</div>
-							<img src="./images/logo-react.png" class="rounded-circle bg-dark project-icon" width="70px" height="70px">
-							<img src="./images/logo-nodejs.png" class="rounded-circle bg-light project-icon2" width="70px" height="70px">
+							<img src="./images/logo-react.png" class="rounded-circle bg-dark project-icon hover-scale-110" width="70px" height="70px">
+							<img src="./images/logo-nodejs.png" class="rounded-circle bg-light project-icon2 hover-scale-110" width="70px" height="70px">
 						</div>
 						<div class="text-center mt-2">
 							<a href="https://eommerce-site-s64e.vercel.app/" target="_blank" class="project-tile">
@@ -345,18 +351,18 @@
 
 			<!-- ======================================== start of about me section ============================ -->
 
-			<div class="container-fluid text-light py-md-5" id="aboutme">
+			<div x-data="{ shown: false }" x-intersect.half="shown = true" class="container-fluid text-light py-md-5" id="aboutme">
 				<div class="row text-center">
 						<div class="col-12">
-							<div id="carousel" class="carousel slide align-content-center vh-100 w-100" data-ride="carousel">
+							<div x-show="shown" x-transition.duration.600ms x-transition.delay.200ms id="carousel" class="carousel slide align-content-center vh-100 w-100" data-ride="carousel">
 					  			<div class="carousel-inner">
 
 					  				<!-- =============== image slider =============== -->
 
 					    			<div class="carousel-item active my-5 py-5">
-					    				<img src="./images/responsive.png" width="600px" class="img-fluid mt-5 mt-md-0 pt-4 pt-md-0">
+					    				<img src="./images/responsive.png" width="600px" class="img-fluid mt-5 mt-md-0 mt-lg-5 pt-4 pt-md-0">
 					        			<h2 class="headertext text-light">Responsive Web Design</h2>
-					        			<p>Best CSS practice made for all divices</p>
+					        			<p class="text-info">Best CSS practice made for all divices</p>
 									</div>
 
 									<!-- ============= end of Image slider ============= -->
@@ -364,7 +370,7 @@
 									<!-- =================== tools slider ============== -->
 
 									<div class="carousel-item py-5 my-md-5">
-									    <div class="d-block text-center shrink py-xl-5">
+									    <div class="d-block text-center shrink py-lg-5 mt-lg-5">
 									        <h2 class="headertext text-light mt-2 mt-md-5 pt-md-5">Skills Sets</h2>
 									        <div class="d-md-inline-flex d-xs-flex">
 									        	<img src="./images/logo-html5.png" title="HTML5" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
@@ -384,7 +390,7 @@
 									        	<img src="./images/logo-mongodb.png" title="MongoDB" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
 									        	<img src="./images/mysqllg.png" title="MySQL" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
 									        </div>
-									        <p class="my-3">Tools I used for Web Development</p>
+									        <p class="my-3 text-info">Tools I used for Web Development</p>
 									      </div>
 									    </div>
 
@@ -393,7 +399,7 @@
 									    <!-- ================== Achievments slider ============== -->
 
 									    <div class="carousel-item py-5 my-5 px-1 px-md-5">
-									      <div class="d-block shrink mx-md-5">
+									      <div class="d-block shrink mx-md-5 py-lg-5 mt-lg-5">
 									        <h2 class="headertext text-light pb-4 pt-5 mt-5">Achievements</h2>
 
 									        	<!-- Button trigger modal -->
@@ -595,7 +601,7 @@
 										        	</div>
 									        	</div>
 
-									        <p class="my-3">Certificates and Recognitions</p>
+									        <p class="my-3 text-info">Certificates and Recognitions</p>
 									      </div>
 									    </div>
 									</div>
@@ -625,14 +631,14 @@
 
 			<!-- =================================== start for contact ==================================== -->
 
-			<div class="container-fluid bgcolortwo vh-100 py-5" id="contact">
-				<div class="row justify-content-center align-content-center">
-					<h3 class="headertext mb-3 mt-xl-5 mt-5 text-info text-center col-12">Contact Us</h3>
+			<div x-data="{ shown: false }" x-intersect.half="shown = true" class="container-fluid vh-100 py-5" id="contact">
+				<div class="row justify-content-center align-content-center py-5 mt-lg-3">
+					<h3 x-show="shown" x-transition.duration.600ms x-transition.delay.200ms class="headertext mb-3 mt-xl-5 mt-5 text-info text-center col-12">Let's Talk</h3>
 					<div class="col-10 col-md-6 col-xl-4 bg-dark text-light">
 
 						<!-- ========= Forms ========= -->
 
-						<form class="form-group pt-4 pb-1 px-2" method="POST" action="mailto:obligado86@yahoo.com?subject=Request%20for%20CV&amp;body=" onsubmit="emailMessage(); showSuccessMessage()">
+						<form x-show="shown" x-transition.duration.600ms x-transition.delay.500ms class="form-group pt-4 pb-1 px-2" method="POST" action="mailto:obligado86@yahoo.com?subject=Request%20for%20CV&amp;body=" onsubmit="emailMessage(); showSuccessMessage()">
 							<label for="name" class="w-100 mt-2">Name</label>
 							<input type="text" name="name" id="name" required autocomplete placeholder=" Full Name" class="w-100">
 							<label for="company" class="w-100 mt-2">Company Name</label>
@@ -656,7 +662,7 @@
 
 		<!-- ================================ button to top ====================================== -->
 		<span>
-			<a href="#profile" id="top-button" class="bg-info rounded-circle text-center text-dark">
+			<a href="#profile" id="top-button" class="bg-info rounded-circle text-center text-light">
 				<i class="fa-solid fa-chevron-up mt-4"> </i>
 			</a>
 		</span>
@@ -668,26 +674,26 @@
 		<footer class="container-fluid bg-info">
 			<div class="row">
 				<div class="offset-0 offset-md-7 col-12 col-md-3 text-md-right">
-					<span class="my-2 mt-5 d-block">
-						<a href="tel:+639261538970" class="text-decoration-none text-dark" id="footer-links"><i class="fa-solid fa-phone"> </i> +63 926 153 8970</a> / <a href="tel:+639082687804" class="text-decoration-none text-dark" id="footer-links">+63 908 268 7804</a></span>
+					<span class="my-2 mt-5 d-block text-light">
+						<a href="tel:+639261538970" class="text-decoration-none text-light footer-links"><i class="fa-solid fa-phone"> </i> +63 926 153 8970</a> / <a href="tel:+639082687804" class="text-decoration-none text-light footer-links">+63 908 268 7804</a></span>
 					<span class="my-2 d-block">
-						<a href="mailto:obligado86@yahoo.com" class="text-decoration-none text-dark" id="footer-links">
+						<a href="mailto:obligado86@yahoo.com" class="text-decoration-none text-light footer-links">
 							<i class="fa-solid fa-envelope"> </i> obligado86@yahoo.com
 						</a>
 					</span>
 					<span class="my-2 d-block">
-						<a href="https://www.linkedin.com/in/john-joseph-obligado-64a470153/" target="_blank" class="text-decoration-none text-dark" id="footer-links">
+						<a href="https://www.linkedin.com/in/john-joseph-obligado-64a470153/" target="_blank" class="text-decoration-none text-light footer-links">
 							<i class="fa-brands fa-linkedin-in"> </i> Linkedin
 						</a>
 					</span>
 					<span class="my-2 d-block">
-						<a href="https://github.com/obligado86" target="_blank" class="text-decoration-none text-dark" id="footer-links">
+						<a href="https://github.com/obligado86" target="_blank" class="text-decoration-none text-light footer-links">
 							<i class="fab fa-github"> </i> github
 						</a>
 					</span>
 				</div>
 			</div>
-			<div class="text-center py-4">
+			<div class="text-center py-4 text-light">
 				<p>by: Joseph Obligado &#169; 2022</p>
 			</div>
 		</footer>

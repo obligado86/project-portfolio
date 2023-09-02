@@ -31,6 +31,10 @@ nav {
 	background-color: #2A2A40;
 }
 
+.bg-teal {
+	background-color: teal;
+}
+
 .profile-img {
 	border: 0.8rem solid lightgray;
 }
@@ -41,6 +45,7 @@ nav {
 
 .hover-bg-light:hover {
 	background-color: white;
+	transition-duration: 1s;
 }
 
 .hover-bg-light:hover .nav-link {
@@ -181,13 +186,19 @@ nav {
   	z-index: 2;
 }
 
+#contact {
+	background-image: url("./images/contactbg.png");
+	background-size: cover;
+	background-position: right;
+}
+
 footer {
 	position: relative;
 	bottom: 0;
 }
 
-#footer-links:hover {
-	color: white !important;
+.footer-links:hover {
+	color: cyan; !important;
 }
 
 #top-button {
