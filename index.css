@@ -31,13 +31,24 @@ nav {
 	background-color: #2A2A40;
 }
 
-.navlink-hover:hover {
-	background-color: white;
-	color: #2A2A40 !important;
-}
-
 .profile-img {
 	border: 0.8rem solid lightgray;
+}
+
+.hover-bg-light {
+	background-color: transparent;
+}
+
+.hover-bg-light:hover {
+	background-color: white;
+}
+
+.hover-bg-light:hover .nav-link {
+	color: darkgrey !important;
+}
+
+.hover-bg-light:hover .nav-link:hover {
+	color: teal !important;
 }
 
 #aboutme {
@@ -62,6 +73,15 @@ nav {
 
 .icon {
 	font-size: 29px;
+}
+
+.hover-scale-110 {
+	transform: scale(1.0);
+}
+
+.hover-scale-110:hover {
+	transform: scale(1.2);
+	transition-duration: 1.2s;
 }
 
 #modal-button {
