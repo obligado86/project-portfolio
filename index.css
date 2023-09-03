@@ -53,7 +53,7 @@ nav {
 }
 
 .hover-bg-light:hover .nav-link:hover {
-	color: teal !important;
+	color: #17a2b8 !important;
 }
 
 #aboutme {
@@ -207,7 +207,7 @@ footer {
 	position: fixed;
 	bottom: 8rem;
 	z-index: 5;
-	right: 0.5rem;
+	right: 0.4rem;
 }
 
 .project-icon {
