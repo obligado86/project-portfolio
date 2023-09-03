@@ -231,7 +231,11 @@ footer {
 .project-icon:hover, .project-icon2:hover {
 	scale: 1.2;
 	z-index: 5;
-} 
+}
+
+.bg-teal {
+	background-color: #17a2b8;
+}
 
 /*==================== Media Qeries =======================*/
 
