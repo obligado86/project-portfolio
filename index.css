@@ -205,9 +205,9 @@ footer {
 	width: 4rem;
 	height: 4rem;
 	position: fixed;
-	bottom: 2rem;
+	bottom: 8rem;
 	z-index: 5;
-	left: 90%;
+	right: 1rem;
 }
 
 .project-icon {
