@@ -414,7 +414,7 @@
 								</div>
 							</div>
 							<img src="./images/shopify.png" title="Shopify" class="rounded-circle bg-dark project-icon hover-scale-110" width="70px" height="70px">
-							<img src="./images/tailwindlogo.png" title="Bootstrap" class="rounded-circle bg-light project-icon2 hover-scale-110" width="70px" height="70px">
+							<img src="./images/tailwindlogo.png" title="tailwindCSS" class="rounded-circle bg-light project-icon2 hover-scale-110" width="70px" height="70px">
 						</div>
 						<div class="text-center mt-2">
 							<a href="https://jlouren.com/" target="_blank" class="project-tile">
@@ -441,8 +441,8 @@
 									<img src="./images/varsitymob.png" alt="phone view joseph project" class="img-fluid w-100">
 								</div>
 							</div>
-							<img src="./images/logo-react.png" title="Shopify" class="rounded-circle bg-dark project-icon hover-scale-110" width="70px" height="70px">
-							<img src="./images/Typescript.svg.png" title="Bootstrap" class="rounded-circle bg-light project-icon2 hover-scale-110" width="70px" height="70px">
+							<img src="./images/logo-react.png" title="React" class="rounded-circle bg-dark project-icon hover-scale-110" width="70px" height="70px">
+							<img src="./images/Typescript.svg.png" title="TypeScript" class="rounded-circle bg-light project-icon2 hover-scale-110" width="70px" height="70px">
 						</div>
 						<div class="text-center mt-2">
 							<a href="https://www.varsity.com.au" target="_blank" class="project-tile">
@@ -469,8 +469,8 @@
 									<img src="./images/tsgmob.png" alt="phone view joseph project" class="img-fluid w-100">
 								</div>
 							</div>
-							<img src="./images/logo-react.png" title="Shopify" class="rounded-circle bg-dark project-icon hover-scale-110" width="70px" height="70px">
-							<img src="./images/Typescript.svg.png" title="Bootstrap" class="rounded-circle bg-light project-icon2 hover-scale-110" width="70px" height="70px">
+							<img src="./images/logo-react.png" title="React" class="rounded-circle bg-dark project-icon hover-scale-110" width="70px" height="70px">
+							<img src="./images/Typescript.svg.png" title="TypeScript" class="rounded-circle bg-light project-icon2 hover-scale-110" width="70px" height="70px">
 						</div>
 						<div class="text-center mt-2">
 							<a href="https://www.sportingglobe.com.au" target="_blank" class="project-tile">
@@ -494,44 +494,50 @@
 			<div x-data="{ shown: false }" x-intersect.half="shown = true" class="container-fluid text-light py-md-5" id="aboutme">
 				<div class="row text-center">
 						<div class="col-12">
-							<div x-show="shown" x-transition.duration.600ms x-transition.delay.200ms id="carousel" class="carousel slide align-content-center vh-100 w-100" data-ride="carousel">
+							<div x-show="shown" x-transition.duration.600ms x-transition.delay.200ms id="carousel" class="carousel slide" data-ride="carousel">
 					  			<div class="carousel-inner">
 
 					  				<!-- =============== image slider =============== -->
 
-					    			<div class="carousel-item active my-5 py-5">
-					    				<img src="./images/responsive.png" width="600px" class="img-fluid mt-5 mt-md-0 mt-lg-5 pt-4 pt-md-0">
-					        			<h2 class="headertext text-light">Responsive Web Design</h2>
-					        			<p class="text-info">Best CSS practice made for all divices</p>
+					    			<div class="carousel-item active">
+										<div class="d-flex align-items-center vh-100 justify-content-center">
+											<img src="./images/responsive.png" width="600px" class="img-fluid">
+											<div>
+												<h2 class="headertext text-light">Responsive Web Design</h2>
+					        					<p class="text-info">Best CSS practice made for all divices</p>
+											</div>
+										</div>
 									</div>
 
 									<!-- ============= end of Image slider ============= -->
 
 									<!-- =================== tools slider ============== -->
 
-									<div class="carousel-item py-5 my-md-5">
-									    <div class="d-block text-center shrink py-lg-5 mt-lg-5">
-									        <h2 class="headertext text-light mt-2 mt-md-5 pt-md-5">Skills Sets</h2>
-									        <div class="d-md-inline-flex d-xs-flex">
-									        	<img src="./images/logo-html5.png" title="HTML5" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        	<img src="./images/logo-css3.png" title="CSS3" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        	<img src="./images/logo-javascript.png" title="JavaScript" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        	<img src="./images/logo-bootstrap.png" title="Bootstrap" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        	<img src="./images/aplogo.jpg" title="AlpineJS" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        	<img src="./images/logo-git.png" title="Git" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        	<img src="./images/logo-nodejs.png" title="NodeJS" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-												<img src="./images/Typescript.svg.png" title="TypeScript" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        </div>
-									        <div class="d-md-inline-flex d-xs-flex">
-									        	<img src="./images/shopify.png" title="Shopify" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        	<img src="./images/tailwindlogo.png" title="tailwindCSS" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        	<img src="./images/phplogo.png" title="Php" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        	<img src="./images/laravellogo.jpg" title="Laravel" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        	<img src="./images/logo-react.png" title="React" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        	<img src="./images/logo-mongodb.png" title="MongoDB" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        	<img src="./images/mysqllg.png" title="MySQL" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
-									        </div>
-									        <p class="my-3 text-info">Tools I used for Web Development</p>
+									<div class="carousel-item">
+									    <div class="d-flex text-center align-items-center vh-100 justify-content-center">
+											<div>
+												<h2 class="headertext text-light">Skills Sets</h2>
+												<div class="d-md-inline-flex d-xs-flex">
+													<img src="./images/logo-html5.png" title="HTML5" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+													<img src="./images/logo-css3.png" title="CSS3" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+													<img src="./images/logo-javascript.png" title="JavaScript" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+													<img src="./images/logo-bootstrap.png" title="Bootstrap" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+													<img src="./images/aplogo.jpg" title="AlpineJS" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+													<img src="./images/logo-git.png" title="Git" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+													<img src="./images/logo-nodejs.png" title="NodeJS" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+													<img src="./images/Typescript.svg.png" title="TypeScript" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+												</div>
+												<div class="d-md-inline-flex d-xs-flex">
+													<img src="./images/shopify.png" title="Shopify" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+													<img src="./images/tailwindlogo.png" title="tailwindCSS" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+													<img src="./images/phplogo.png" title="Php" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+													<img src="./images/laravellogo.jpg" title="Laravel" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+													<img src="./images/logo-react.png" title="React" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+													<img src="./images/logo-mongodb.png" title="MongoDB" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+													<img src="./images/mysqllg.png" title="MySQL" class="rounded-circle bg-white m-2 hover-scale-110" width="70px" height="70px">
+												</div>
+												<p class="my-3 text-info">Tools I used for Web Development</p>
+											</div>
 									      </div>
 									    </div>
 
@@ -539,9 +545,10 @@
 
 									    <!-- ================== Achievments slider ============== -->
 
-									    <div class="carousel-item py-5 my-5 px-1 px-md-5">
-									      <div class="d-block shrink mx-md-5 py-lg-5 mt-lg-5">
-									        <h2 class="headertext text-light pb-4 pt-5 mt-5">Achievements</h2>
+									    <div class="carousel-item">
+									      <div class="d-flex align-items-center vh-100 justify-content-center">
+											<div>
+												<h2 class="headertext text-light">Achievements</h2>
 
 									        	<!-- Button trigger modal -->
 									        	<button type="button" class="btn btn-light my-3 mx-auto mx-lg-3 d-block d-lg-inline hover-scale-110 rounded-pill" data-toggle="modal" data-target="#sixthmodal" id="modal-button">
@@ -742,7 +749,8 @@
 										        	</div>
 									        	</div>
 
-									        <p class="my-3 text-info">Certificates and Recognitions</p>
+									        	<p class="my-3 text-info">Certificates and Recognitions</p>
+											</div>
 									      </div>
 									    </div>
 									</div>
@@ -777,7 +785,7 @@
 					<div class="row justify-content-center align-content-center py-5 my-lg-3 bg-info mx-md-5 text-light overflow-hidden p-4 p-md-5" style="border-radius: 20px 20px 20px 20px;">
 						<h3 x-show="shown" x-transition.duration.600ms x-transition.delay.200ms class="headertext mb-5 mt-5 text-center col-12">Let's Talk</h3>
 							<p>
-								As a dedicated front-end developer with 4 years of experience, I bring to the table a deep understanding of modern web technologies and a strong commitment to creating user-centric, visually appealing, and high-performance websites. Here are a few reasons why I believe I would be a valuable addition to your team:
+								As a dedicated Software developer with 4 years of experience, I bring to the table a deep understanding of modern web technologies and a strong commitment to creating user-centric, visually appealing, and high-performance websites. Here are a few reasons why I believe I would be a valuable addition to your team:
 								<br><br>
 								&#9864; Mastery of Front-End Technologies: My expertise in HTML, CSS, JavaScript, and front-end libraries/frameworks such as tailwind CSS, Bootstrap, React, Laravel, and Alpine JS  enables me to craft seamless and responsive user interfaces.
 								<br><br>
