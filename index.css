@@ -102,10 +102,22 @@ nav {
 }
 
 .laptop {
-		position: relative;
+	position: relative;
   	width: 240px;
   	height: 150px;
   	margin: 0 auto;
+}
+
+.mobile_app {
+	position: relative;
+	height: 150px;
+	width: 70px;
+	margin: 0 auto 10px auto;
+}
+
+.mobile_app .phone {
+	top: 0;
+	left: 0;
 }
 
 .laptop-screen {
@@ -198,7 +210,7 @@ footer {
 }
 
 .footer-links:hover {
-	color: cyan; !important;
+	color: cyan !important;
 }
 
 #top-button {
